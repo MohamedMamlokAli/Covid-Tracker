@@ -1,0 +1,119 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Roboto&display=swap");
+
+h1 {
+  font-size: 50px;
+  font-family: "Amiri", serif;
+  color: #222;
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+body {
+  background-color: #e9e8e6;
+  color: #182628;
+}
+nav {
+  min-width: 50%;
+}
+.rounded:hover {
+  border-radius: 5px;
+  color: white;
+}
+@media screen and (max-width: 425px) {
+  .show {
+    display: none;
+  }
+  h1 {
+    font-size: 48px;
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 426px) {
+  .show-only {
+    display: none;
+  }
+}
+header {
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  height: 72px;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: 1px;
+}
+.logo-div {
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff6f5;
+}
+.show-only {
+  height: 72px;
+  margin: 10px;
+}
+.nav-mob {
+  height: 160px;
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 0px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #fff6f5;
+  transition: ease-in-out 0.2s;
+  opacity: 1;
+  visibility: visible;
+  width: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.center {
+  display: grid;
+  place-items: center;
+}
+.carousel {
+  display: grid;
+  place-items: center;
+  max-width: 50vw;
+  max-height: auto;
+}
+h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.home-img {
+  height: 50%;
+}
+.slider {
+  transform: translate(-200%, 0px, 0px);
+  transition-duration: 350ms;
+}
+.nameContainer {
+  border: 5px solid;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.8);
+  top: 180px;
+  left: 190px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-weight: bold;
+  max-width: auto;
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+}
+.singleLink {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+section {
+  line-height: 40px;
+}
