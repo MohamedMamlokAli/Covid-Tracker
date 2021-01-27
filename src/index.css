@@ -6,6 +6,10 @@
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+.btn-home {
+  text-decoration: none;
+  color: white;
+}
 .nav-Links {
   width: 636px;
   display: flex;
@@ -44,6 +48,11 @@ a {
 }
 .green {
   background-color: #27cccc !important;
+  text-decoration: none;
+}
+.btn-home:hover {
+  text-decoration: none;
+  color: white;
 }
 .noBG {
   background-color: rgb(255, 255, 255, 0);

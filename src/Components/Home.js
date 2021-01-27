@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import faceMask from "./Images/facemask.svg"
 import woman from "./Images/woman.svg"
 import { gsap } from "gsap";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   useEffect(()=>{
@@ -16,7 +17,17 @@ const Home = () => {
      <h1 className="animate-text">Masks save lifes </h1>
      <p className="animate-text">Experts say if 95 percent of people wore a face mask,
        it could save nearly 130,000 lives between now and March 1st.</p>
-<a href="/info" className="btn bg-info green text-white btn-lg active" role="button" aria-pressed="true">Learn how to stay safe</a>
+<a href="" className="btn bg-info green text-white btn-lg active" role="button" aria-pressed="true">
+  <NavLink
+  className="btn-home"
+                to="/info"
+                exact
+              >
+                  Learn how to stay safe
+
+              </NavLink>
+
+  </a>
     </div>
     <div className="col hero-img">
       <img className="homepage-img" src={woman} alt=""/>
