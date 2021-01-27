@@ -49,7 +49,7 @@ const Today = () => {
         <div className="col hero-text">
          <div  className="resize" >
     <Countries handleChange={handleChange} />
-    <a href="#" className="btn bg-info green text-white btn-lg active" role="button" aria-pressed="true">
+    <a href="#" className="btn mt-2 bg-info green text-white btn-lg active" role="button" aria-pressed="true">
      Cases
      </a>
 
@@ -61,7 +61,7 @@ const Today = () => {
    </div>
   </div>
 :    <div className="container">
-  <div className="row">
+  <div className="row country-data">
     <div className="col country-text">
     <a href="#" className="btn goBack bg-info green text-white btn-lg active" role="button" aria-pressed="true">
      Go Back

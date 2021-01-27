@@ -11,7 +11,7 @@ function Countries(props) {
                 value={props.value}
                 onChange={props.handleChange}
                 >
-                        <option>Choose...</option>
+                        <option>Worldwide</option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>

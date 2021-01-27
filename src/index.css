@@ -93,4 +93,29 @@ a {
   .hero-text > h1 {
     text-align: center;
   }
+  .country-data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    max-width: 80vw;
+  }
+  .country-text {
+    top: 200px;
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    left: 50px;
+    right: 0;
+  }
+  .goBack {
+    bottom: 100px;
+  }
+  .flag-img {
+    left: 60px;
+    top: 250px;
+  }
 }
