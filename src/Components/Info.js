@@ -1,9 +1,10 @@
 import React,{useEffect} from 'react'
 import { gsap } from "gsap";
 import doc from "./Images/doctor.svg"
+import { random } from 'gsap/gsap-core';
 const Info = () => {
  useEffect(() => {
-  gsap.from(".info",{opacity:0,x:-100,duration:1,stagger:.5})
+  gsap.from(".info",{opacity:0,x:random(-100,100),duration:1,stagger:.5})
   gsap.from(".hero-img",{opacity:0,left:100,duration:1})
  }, [])
  return (

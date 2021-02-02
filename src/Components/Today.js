@@ -6,7 +6,7 @@ import axios from "axios"
 import {gsap} from "gsap"
 import { Timeline } from 'gsap/gsap-core';
 const Today = () => {
-  const [country,setcountry] = useState({iso:123})
+  const [country,setcountry] = useState({country:"Worldwide"})
   const [flag,setFlag] = useState("")
   const [pick,setPick] = useState(false)
   const handleChange = async(e)=>{
@@ -46,7 +46,7 @@ const Today = () => {
    <section>
      {!pick?<div className="container">
       <div className="row">
-        <div className="col hero-text">
+        <div className="col hero-text center">
          <div  className="resize" >
     <Countries handleChange={handleChange} />
     <a href="#" className="btn mt-2 bg-info green text-white btn-lg active" role="button" aria-pressed="true">

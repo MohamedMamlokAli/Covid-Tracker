@@ -46,7 +46,7 @@ const Today = () => {
    <section>
      {!pick?<div className="container">
       <div className="row">
-        <div className="col hero-text">
+        <div className="col hero-text center">
          <div  className="resize" >
     <Countries handleChange={handleChange} />
     <a href="#" className="btn mt-2 bg-info green text-white btn-lg active" role="button" aria-pressed="true">
@@ -61,8 +61,8 @@ const Today = () => {
    </div>
   </div>
 :    <div className="container">
-  <div className="row country-data">
-    <div className="col country-text">
+  <div className="row country-data ">
+    <div className="col country-text ">
     <a href="#" className="btn goBack bg-info green text-white btn-lg active" role="button" aria-pressed="true">
      Go Back
      </a>
@@ -76,7 +76,7 @@ const Today = () => {
 
     </div>
     <div className="col flag-img">
-            <img src={flag} alt=""/>
+        <img src={flag} alt=""/>
     </div>
   </div>
     </div>

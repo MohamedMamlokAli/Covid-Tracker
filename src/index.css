@@ -78,7 +78,7 @@ a {
   font-weight: bold;
 }
 .flag-img {
-  position: realtive;
+  position: relative;
   top: 300px;
   left: 100px;
 }
@@ -87,11 +87,12 @@ a {
   bottom: 200px;
 }
 @media screen and (max-width: 768px) {
-  .hero-img {
+  .hero-img,
+  .homepage-img {
     display: none;
   }
   .hero-text {
-    top: 200px;
+    top: 50px;
     width: 425px;
     display: flex;
     flex-direction: column;
@@ -110,7 +111,7 @@ a {
     max-width: 80vw;
   }
   .country-text {
-    top: 200px;
+    top: 90px;
     width: 425px;
     display: flex;
     flex-direction: column;
@@ -121,10 +122,26 @@ a {
     right: 0;
   }
   .goBack {
-    bottom: 100px;
+    bottom: 50px;
   }
   .flag-img {
-    left: 60px;
-    top: 250px;
+    left: 3.5rem;
+    top: 130px;
+    place-self: center;
+  }
+  .info-text {
+    top: 50px;
+  }
+  .info {
+    line-height: 1.3rem;
+  }
+  .center {
+    align-items: center;
+  }
+  .flag-img > img {
+    height: 150px;
+    width: 200px;
+    padding: 1rem;
+    margin-left: 1.7rem;
   }
 }
