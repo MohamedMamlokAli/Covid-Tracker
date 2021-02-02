@@ -66,7 +66,7 @@ const Today = () => {
     <a href="#" className="btn goBack bg-info green text-white btn-lg active" role="button" aria-pressed="true">
      Go Back
      </a>
-      <p className="stagger">country: {country.country}</p >
+      <p className="stagger">country: {country.country?country.country : "Worldwide"}</p >
       <p className="stagger">Total cases: {country.cases}</p >
       <p className="stagger">New cases: {country.todayCases}</p >
       <p className="stagger">Total deaths: {country.deaths} </p >
@@ -76,7 +76,8 @@ const Today = () => {
 
     </div>
     <div className="col flag-img">
-            <img src={flag} alt=""/>
+      {flag?<img src={flag} alt=""/>:<img width="200" src={earth} alt=""/>}
+            
     </div>
   </div>
     </div>
